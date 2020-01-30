@@ -19,3 +19,7 @@ $("input[type='text']").on('keypress', function(event){
         $('ul').append('<li><span><i class="fas fa-trash-alt"></i></span><i class="fas fa-check"></i>' + todoItem + '</li>')
     }
 })
+
+$(".fa-plus").click(function(){
+    $("input").fadeToggle();
+})

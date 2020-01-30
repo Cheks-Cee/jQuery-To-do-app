@@ -55,10 +55,14 @@ input:focus{
 
 ul{
     list-style:none;
+    padding: 0;
+    margin: 0;
 }
 
 ul li{
-    line-height: 30px;
+    line-height: 42px;
+    margin: 0;
+    padding: 0;
 }
 
 li:nth-child(2n){
@@ -66,8 +70,23 @@ li:nth-child(2n){
 }
 
 .fa-trash-alt{
-    color:red;
+    visibility: hidden;
+    color:white;
     margin-right: .5rem;
+    background-color: red;
+    width: 0;
+    height: 38px;
+    display: inline-block;
+    padding-top: .5rem;
+    text-align: center;
+    line-height: 30px;
+    transition: 0.2s linear;
+    
+}
+
+ul li:hover .fa-trash-alt{
+    visibility: visible;
+    width: 42px;
 }
 
 .done{
@@ -75,3 +94,4 @@ li:nth-child(2n){
     text-decoration-style: double;
     color:grey;
 }
+
